@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
 
 <title>For Bhanu ❤️</title>
 
 <style>
 
-/* =========================
+/* ==================================================
    BASIC SETTINGS
-========================= */
+================================================== */
 
 * {
     margin: 0;
@@ -35,9 +39,9 @@ button {
 }
 
 
-/* =========================
+/* ==================================================
    PASSWORD SCREEN
-========================= */
+================================================== */
 
 #passwordScreen {
     position: fixed;
@@ -67,9 +71,9 @@ button {
 
 .password-card {
     width: 100%;
-    max-width: 430px;
+    max-width: 440px;
 
-    background: rgba(255,255,255,.95);
+    background: rgba(255,255,255,.96);
 
     padding: 45px 30px;
 
@@ -94,14 +98,11 @@ button {
         opacity: 1;
         transform: scale(1);
     }
-
 }
 
 .password-heart {
     font-size: 70px;
-
-    animation:
-        heartbeat 1.5s infinite;
+    animation: heartbeat 1.5s infinite;
 }
 
 @keyframes heartbeat {
@@ -113,10 +114,10 @@ button {
     50% {
         transform: scale(1.15);
     }
-
 }
 
 .password-card h1 {
+
     margin: 15px 0;
 
     color: #c2185b;
@@ -125,6 +126,7 @@ button {
 }
 
 .password-card p {
+
     color: #6d304b;
 
     line-height: 1.7;
@@ -138,7 +140,8 @@ button {
 
     padding: 15px;
 
-    border: 2px solid #f3a2bd;
+    border:
+        2px solid #f3a2bd;
 
     border-radius: 30px;
 
@@ -150,6 +153,11 @@ button {
 
     margin-bottom: 15px;
 }
+
+
+/* ==================================================
+   BUTTONS
+================================================== */
 
 .main-btn {
 
@@ -190,18 +198,63 @@ button {
 }
 
 
-/* =========================
+/* ==================================================
    MAIN WEBSITE
-========================= */
+================================================== */
 
 #website {
     display: none;
 }
 
 
-/* =========================
+/* ==================================================
+   MUSIC BUTTON
+================================================== */
+
+.music-control {
+
+    position: fixed;
+
+    right: 20px;
+    bottom: 20px;
+
+    width: 55px;
+    height: 55px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #c2185b,
+            #ff4f8b
+        );
+
+    color: white;
+
+    font-size: 23px;
+
+    box-shadow:
+        0 8px 25px rgba(194,24,91,.35);
+
+    z-index: 9000;
+
+    transition: .3s;
+}
+
+.music-control:hover {
+
+    transform:
+        scale(1.1)
+        rotate(5deg);
+}
+
+
+/* ==================================================
    FLOATING HEARTS
-========================= */
+================================================== */
 
 .heart {
 
@@ -224,6 +277,7 @@ button {
 @keyframes floatHeart {
 
     0% {
+
         transform:
             translateY(0)
             rotate(0);
@@ -246,9 +300,9 @@ button {
 }
 
 
-/* =========================
+/* ==================================================
    HERO
-========================= */
+================================================== */
 
 .hero {
 
@@ -284,15 +338,20 @@ button {
 @keyframes heroAppear {
 
     from {
+
         opacity: 0;
-        transform: translateY(40px);
+
+        transform:
+            translateY(40px);
     }
 
     to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
 }
 
 .hero-small {
@@ -347,9 +406,9 @@ button {
 }
 
 
-/* =========================
+/* ==================================================
    SECTIONS
-========================= */
+================================================== */
 
 section.content-section {
 
@@ -370,7 +429,7 @@ section.content-section {
 
 .section-subtitle {
 
-    max-width: 650px;
+    max-width: 700px;
 
     margin:
         0 auto 40px;
@@ -381,9 +440,9 @@ section.content-section {
 }
 
 
-/* =========================
-   FIRST VIDEO
-========================= */
+/* ==================================================
+   VIDEO SECTION
+================================================== */
 
 .first-video-section {
 
@@ -392,8 +451,7 @@ section.content-section {
     color: white;
 }
 
-.first-video-section
-.section-title {
+.first-video-section .section-title {
 
     color: #ffb6cc;
 }
@@ -403,8 +461,6 @@ section.content-section {
     max-width: 900px;
 
     margin: auto;
-
-    position: relative;
 }
 
 .video-wrapper video {
@@ -441,9 +497,9 @@ section.content-section {
 }
 
 
-/* =========================
+/* ==================================================
    MORE VIDEOS
-========================= */
+================================================== */
 
 .video-grid {
 
@@ -472,6 +528,14 @@ section.content-section {
 
     box-shadow:
         0 10px 30px rgba(0,0,0,.1);
+
+    transition: .3s;
+}
+
+.video-card:hover {
+
+    transform:
+        translateY(-8px);
 }
 
 .video-card video {
@@ -481,6 +545,8 @@ section.content-section {
     border-radius: 15px;
 
     background: black;
+
+    display: block;
 }
 
 .video-card h3 {
@@ -491,9 +557,9 @@ section.content-section {
 }
 
 
-/* =========================
+/* ==================================================
    MESSAGE
-========================= */
+================================================== */
 
 .message-box {
 
@@ -518,18 +584,16 @@ section.content-section {
 }
 
 .message-box .center {
-
     text-align: center;
 }
 
 .message-box strong {
-
     color: #c2185b;
 }
 
 
 /* ==================================================
-   BEAUTIFUL PHOTO GALLERY
+   PHOTO GALLERY
 ================================================== */
 
 .gallery {
@@ -544,12 +608,7 @@ section.content-section {
         repeat(3, 1fr);
 
     gap: 30px;
-
-    align-items: start;
 }
-
-
-/* PHOTO CARD */
 
 .photo-card {
 
@@ -569,9 +628,6 @@ section.content-section {
     overflow: hidden;
 }
 
-
-/* HOVER */
-
 .photo-card:hover {
 
     transform:
@@ -581,9 +637,6 @@ section.content-section {
     box-shadow:
         0 20px 45px rgba(194,24,91,.2);
 }
-
-
-/* PHOTO */
 
 .photo-card img {
 
@@ -610,20 +663,16 @@ section.content-section {
         transform .4s ease;
 }
 
-
-/* PHOTO ZOOM */
-
 .photo-card:hover img {
 
-    transform: scale(1.03);
+    transform:
+        scale(1.03);
 }
-
-
-/* PHOTO NUMBER / CAPTION */
 
 .photo-caption {
 
-    padding: 15px 5px 8px;
+    padding:
+        15px 5px 8px;
 
     color: #c2185b;
 
@@ -633,9 +682,9 @@ section.content-section {
 }
 
 
-/* =========================
+/* ==================================================
    REASONS
-========================= */
+================================================== */
 
 .reasons {
 
@@ -696,9 +745,358 @@ section.content-section {
 }
 
 
-/* =========================
-   TIMELINE
-========================= */
+/* ==================================================
+   BALLOON SECTION
+================================================== */
+
+.balloon-section {
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff0f5,
+            #ffe0eb
+        );
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+.balloon-area {
+
+    max-width: 1000px;
+
+    min-height: 520px;
+
+    margin: 40px auto;
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.balloon {
+
+    position: absolute;
+
+    width: 105px;
+    height: 135px;
+
+    border-radius:
+        50% 50% 45% 45%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow:
+        inset -10px -15px 20px rgba(0,0,0,.12),
+        0 12px 25px rgba(0,0,0,.15);
+
+    animation:
+        balloonFloat 3s ease-in-out infinite;
+}
+
+.balloon::after {
+
+    content: "";
+
+    position: absolute;
+
+    bottom: -70px;
+
+    left: 50%;
+
+    width: 2px;
+
+    height: 70px;
+
+    background: #8a5265;
+}
+
+.balloon::before {
+
+    content: "";
+
+    position: absolute;
+
+    bottom: -10px;
+
+    left: 50%;
+
+    transform:
+        translateX(-50%);
+
+    width: 0;
+    height: 0;
+
+    border-left:
+        8px solid transparent;
+
+    border-right:
+        8px solid transparent;
+
+    border-top:
+        15px solid #c2185b;
+}
+
+.balloon:nth-child(1) {
+
+    left: 8%;
+    top: 90px;
+
+    background: #ff5f8f;
+
+    animation-delay: .2s;
+}
+
+.balloon:nth-child(2) {
+
+    left: 28%;
+    top: 35px;
+
+    background: #d63384;
+
+    animation-delay: .8s;
+}
+
+.balloon:nth-child(3) {
+
+    right: 30%;
+    top: 90px;
+
+    background: #c2185b;
+
+    animation-delay: 1.2s;
+}
+
+.balloon:nth-child(4) {
+
+    right: 8%;
+    top: 40px;
+
+    background: #ff7aa5;
+
+    animation-delay: 1.7s;
+}
+
+.balloon:nth-child(5) {
+
+    left: 20%;
+    bottom: 55px;
+
+    background: #e83e8c;
+
+    animation-delay: 2s;
+}
+
+.balloon:nth-child(6) {
+
+    right: 20%;
+    bottom: 50px;
+
+    background: #b51752;
+
+    animation-delay: 2.5s;
+}
+
+@keyframes balloonFloat {
+
+    0%,100% {
+        transform:
+            translateY(0)
+            rotate(-3deg);
+    }
+
+    50% {
+        transform:
+            translateY(-18px)
+            rotate(3deg);
+    }
+}
+
+.balloon.burst {
+
+    animation:
+        balloonBurst .5s forwards;
+}
+
+@keyframes balloonBurst {
+
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.5);
+        opacity: .7;
+    }
+
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+
+/* ==================================================
+   POP EFFECT
+================================================== */
+
+.pop-text {
+
+    position: absolute;
+
+    color: #c2185b;
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    pointer-events: none;
+
+    animation:
+        popText 1s ease forwards;
+
+    z-index: 100;
+}
+
+@keyframes popText {
+
+    0% {
+        transform: scale(.5);
+        opacity: 0;
+    }
+
+    30% {
+        transform: scale(1.3);
+        opacity: 1;
+    }
+
+    100% {
+        transform:
+            translateY(-80px)
+            scale(.8);
+
+        opacity: 0;
+    }
+}
+
+
+/* ==================================================
+   LOVE POPUP
+================================================== */
+
+.love-message {
+
+    position: fixed;
+
+    inset: 0;
+
+    display: none;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background:
+        rgba(48,16,31,.88);
+
+    z-index: 9500;
+
+    padding: 20px;
+}
+
+.love-message.show {
+
+    display: flex;
+}
+
+.love-message-box {
+
+    background: white;
+
+    padding: 50px 35px;
+
+    max-width: 550px;
+
+    width: 100%;
+
+    border-radius: 30px;
+
+    text-align: center;
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.4);
+
+    animation:
+        loveAppear .7s ease;
+}
+
+@keyframes loveAppear {
+
+    from {
+
+        transform:
+            scale(.5);
+
+        opacity: 0;
+    }
+
+    to {
+
+        transform:
+            scale(1);
+
+        opacity: 1;
+    }
+}
+
+.love-message-box .big-heart {
+
+    font-size: 80px;
+
+    animation:
+        heartbeat 1.2s infinite;
+}
+
+.love-message-box h1 {
+
+    color: #c2185b;
+
+    font-size:
+        clamp(45px,8vw,75px);
+
+    margin: 15px 0;
+}
+
+.love-message-box p {
+
+    line-height: 1.8;
+
+    font-size: 18px;
+}
+
+
+/* ==================================================
+   STORY
+================================================== */
 
 .timeline {
 
@@ -734,10 +1132,15 @@ section.content-section {
     margin-bottom: 10px;
 }
 
+.timeline-item p {
 
-/* =========================
+    line-height: 1.8;
+}
+
+
+/* ==================================================
    SURPRISE
-========================= */
+================================================== */
 
 .surprise-section {
 
@@ -751,8 +1154,7 @@ section.content-section {
     color: white;
 }
 
-.surprise-section
-.section-title {
+.surprise-section .section-title {
 
     color: white;
 }
@@ -768,11 +1170,13 @@ section.content-section {
 @keyframes giftBounce {
 
     0%,100% {
-        transform: translateY(0);
+        transform:
+            translateY(0);
     }
 
     50% {
-        transform: translateY(-15px);
+        transform:
+            translateY(-15px);
     }
 }
 
@@ -804,37 +1208,52 @@ section.content-section {
 @keyframes surpriseAppear {
 
     from {
+
         opacity: 0;
-        transform: scale(.7);
+
+        transform:
+            scale(.7);
     }
 
     to {
-        opacity: 1;
-        transform: scale(1);
-    }
 
+        opacity: 1;
+
+        transform:
+            scale(1);
+    }
 }
 
 
-/* =========================
+/* ==================================================
    LOVE LETTER
-========================= */
+================================================== */
+
+.letter-section {
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff8fa,
+            #ffeaf1
+        );
+}
 
 .letter {
 
-    max-width: 850px;
+    max-width: 900px;
 
     margin: auto;
 
     background:
         linear-gradient(
-            rgba(255,255,255,.96),
-            rgba(255,245,248,.96)
+            rgba(255,255,255,.98),
+            rgba(255,245,248,.98)
         );
 
-    padding: 55px;
+    padding: 60px;
 
-    border-radius: 5px;
+    border-radius: 8px;
 
     box-shadow:
         0 15px 40px rgba(0,0,0,.12);
@@ -847,6 +1266,30 @@ section.content-section {
 
     border-top:
         5px solid #c2185b;
+
+    position: relative;
+}
+
+.letter::before {
+
+    content: "💌";
+
+    position: absolute;
+
+    top: -30px;
+
+    left: 50%;
+
+    transform:
+        translateX(-50%);
+
+    background: white;
+
+    border-radius: 50%;
+
+    padding: 10px;
+
+    font-size: 35px;
 }
 
 .letter-title {
@@ -857,13 +1300,36 @@ section.content-section {
 
     margin-bottom: 30px;
 
-    font-size: 35px;
+    font-size: 38px;
+}
+
+.letter p {
+
+    margin-bottom: 18px;
+}
+
+.letter .special {
+
+    color: #c2185b;
+
+    font-weight: bold;
+}
+
+.signature {
+
+    text-align: right;
+
+    font-size: 25px;
+
+    color: #c2185b;
+
+    margin-top: 30px;
 }
 
 
-/* =========================
-   FINAL SECTION
-========================= */
+/* ==================================================
+   FINAL
+================================================== */
 
 .final-section {
 
@@ -918,9 +1384,9 @@ section.content-section {
 }
 
 
-/* =========================
+/* ==================================================
    FOOTER
-========================= */
+================================================== */
 
 footer {
 
@@ -959,8 +1425,13 @@ footer span {
 
         height: 350px;
     }
-}
 
+    .balloon {
+
+        width: 85px;
+        height: 110px;
+    }
+}
 
 @media (max-width: 600px) {
 
@@ -979,11 +1450,6 @@ footer span {
         gap: 25px;
     }
 
-    .photo-card {
-
-        max-width: 100%;
-    }
-
     .photo-card img {
 
         height: auto;
@@ -996,14 +1462,52 @@ footer span {
         font-size: 55px;
     }
 
+    .letter {
+
+        font-size: 17px;
+
+        line-height: 2;
+    }
+
+    .balloon-area {
+
+        min-height: 600px;
+    }
+
+    .balloon:nth-child(1) {
+        left: 3%;
+    }
+
+    .balloon:nth-child(2) {
+        left: 36%;
+    }
+
+    .balloon:nth-child(3) {
+        right: 3%;
+    }
+
+    .balloon:nth-child(4) {
+        top: 220px;
+        left: 15%;
+    }
+
+    .balloon:nth-child(5) {
+        bottom: 80px;
+        left: 35%;
+    }
+
+    .balloon:nth-child(6) {
+        bottom: 80px;
+        right: 5%;
+    }
+
+    .love-message-box {
+        padding: 35px 20px;
+    }
 }
 
-
-/* =========================
-   END
-========================= */
-
 </style>
+
 </head>
 
 
@@ -1027,10 +1531,18 @@ footer span {
         </h1>
 
         <p>
-            This little world was made especially for you.
-            <br>
+
+            This little world was made
+            especially for you.
+
+            <br><br>
+
             If you are Bhanu...
+
+            <br>
+
             you know the secret. 🥺❤️
+
         </p>
 
         <input
@@ -1055,10 +1567,41 @@ footer span {
 
 
 <!-- ==================================================
+     BACKGROUND MUSIC
+================================================== -->
+
+<audio
+    id="backgroundMusic"
+    loop
+>
+
+    <source
+        src="music.mp3"
+        type="audio/mpeg"
+    >
+
+</audio>
+
+
+
+<!-- ==================================================
      MAIN WEBSITE
 ================================================== -->
 
 <div id="website">
+
+
+<!-- MUSIC BUTTON -->
+
+<button
+    id="musicButton"
+    class="music-control"
+    onclick="toggleMusic()"
+    title="Music On / Off"
+>
+    🎵
+</button>
+
 
 
 <!-- FLOATING HEARTS -->
@@ -1116,10 +1659,16 @@ footer span {
         </h2>
 
         <p>
+
             Today is your day...
-            but somehow, I feel lucky too,
-            because this world gave me someone
-            who became so special to my heart.
+
+            but somehow,
+            I feel lucky too,
+
+            because this world gave me
+            someone who became
+            so special to my heart.
+
         </p>
 
         <a
@@ -1136,7 +1685,7 @@ footer span {
 
 
 <!-- ==================================================
-     FIRST VIDEO
+     VIDEO 1 — BIRTHDAY WISH
 ================================================== -->
 
 <section
@@ -1145,25 +1694,32 @@ footer span {
 >
 
     <h2 class="section-title">
-        First... Watch This 🎥❤️
+
+        Your Birthday Wishes 🎂❤️
+
     </h2>
 
     <p
         class="section-subtitle"
         style="color:#ffdce8;"
     >
-        I wanted the first thing you see here
-        to be something directly from me.
+
+        Before anything else,
+        I wanted you to see this.
+
+        A little birthday wish
+        made especially for you. ❤️
+
     </p>
 
     <div class="video-wrapper">
 
         <video
             id="firstVideo"
-            autoplay
             muted
             playsinline
             controls
+            preload="metadata"
         >
 
             <source
@@ -1181,7 +1737,9 @@ footer span {
         class="sound-button"
         onclick="turnSoundOn()"
     >
-        🔊 Tap here for sound
+
+        🔊 Play Video With Sound
+
     </button>
 
 </section>
@@ -1189,19 +1747,24 @@ footer span {
 
 
 <!-- ==================================================
-     MORE VIDEOS
+     ALL FOUR VIDEOS
 ================================================== -->
 
 <section class="content-section">
 
     <h2 class="section-title">
-        More Little Pieces Of Us 🎬❤️
+
+        Little Pieces Of Us 🎬❤️
+
     </h2>
 
     <p class="section-subtitle">
 
-        Because one video could never hold
-        all the memories I wanted to show you.
+        Four videos...
+
+        four little pieces
+        of memories
+        that mean so much to me. ❤️
 
     </p>
 
@@ -1209,57 +1772,108 @@ footer span {
     <div class="video-grid">
 
 
+        <!-- VIDEO 1 -->
+
         <div class="video-card">
 
-            <video controls>
+            <video
+                controls
+                playsinline
+                preload="metadata"
+            >
+
+                <source
+                    src="videos/birthday-wish.mp4"
+                    type="video/mp4"
+                >
+
+                Your browser does not support video.
+
+            </video>
+
+            <h3>
+                Birthday Wishes 🎂❤️
+            </h3>
+
+        </div>
+
+
+
+        <!-- VIDEO 2 -->
+
+        <div class="video-card">
+
+            <video
+                controls
+                playsinline
+                preload="metadata"
+            >
 
                 <source
                     src="videos/video2.mp4"
                     type="video/mp4"
                 >
 
+                Your browser does not support video.
+
             </video>
 
             <h3>
-                A Memory ❤️
+                Together 🫂❤️
             </h3>
 
         </div>
 
 
 
+        <!-- VIDEO 3 -->
+
         <div class="video-card">
 
-            <video controls>
+            <video
+                controls
+                playsinline
+                preload="metadata"
+            >
 
                 <source
                     src="videos/video3.mp4"
                     type="video/mp4"
                 >
 
+                Your browser does not support video.
+
             </video>
 
             <h3>
-                Another Memory 🫂
+                Our Best Memory 🥺💕
             </h3>
 
         </div>
 
 
 
+        <!-- VIDEO 4 -->
+
         <div class="video-card">
 
-            <video controls>
+            <video
+                controls
+                playsinline
+                preload="metadata"
+            >
 
                 <source
                     src="videos/video4.mp4"
                     type="video/mp4"
                 >
 
+                Your browser does not support video.
+
             </video>
 
             <h3>
-                Just Us 💕
+                Again... Birthday Wish 🎂❤️
             </h3>
 
         </div>
@@ -1278,9 +1892,10 @@ footer span {
 <section class="content-section">
 
     <h2 class="section-title">
-        Now... A Message For You 💌
-    </h2>
 
+        Now... A Message For You 💌
+
+    </h2>
 
     <div class="message-box">
 
@@ -1294,55 +1909,42 @@ footer span {
 
         <br>
 
-
         <p>
-            I don't know if I can put everything
-            I feel into a few words,
-            but I still want to try.
+
+            I don't know if words will ever be enough
+            to explain everything that is inside my heart.
+
+            But today I wanted to try.
+
         </p>
 
-
         <p>
+
             You became a part of my life
             in a way I never expected.
-            Somewhere between the conversations,
-            laughs, silly moments,
-            misunderstandings and memories,
-            you became someone my heart
-            started caring about deeply.
-        </p>
 
+            Somewhere between our conversations,
+            our laughs, our silly moments,
+            our misunderstandings,
+            our memories...
+
+            you became someone
+            incredibly special to me.
+
+        </p>
 
         <p>
-            There have been beautiful days.
-            There have also been difficult days.
-            But every moment became
-            a part of our story.
+
+            And even after everything,
+            that special place
+            has never disappeared.
+
         </p>
-
-
-        <p>
-            And today, on your birthday,
-            more than anything,
-            I wish you happiness,
-            peace, success and everything
-            beautiful that life can give you.
-        </p>
-
-
-        <br>
-
 
         <p class="center">
 
             <strong>
-
-                No matter how many birthdays come,
-                I hope this little surprise reminds you
-                that someone once cared enough
-                to create an entire little world
-                just for you. ❤️
-
+                You are still very special to me. ❤️
             </strong>
 
         </p>
@@ -1354,28 +1956,29 @@ footer span {
 
 
 <!-- ==================================================
-     BEAUTIFUL PHOTO GALLERY
+     PHOTO GALLERY
 ================================================== -->
 
 <section class="content-section">
 
     <h2 class="section-title">
+
         Our Memories 📸❤️
+
     </h2>
 
     <p class="section-subtitle">
 
         Some moments become memories...
-        and some memories become pieces
-        of our heart.
+
+        and some memories become
+        pieces of our heart.
 
     </p>
 
 
     <div class="gallery">
 
-
-        <!-- PHOTO 1 -->
 
         <div class="photo-card">
 
@@ -1391,9 +1994,6 @@ footer span {
         </div>
 
 
-
-        <!-- PHOTO 2 -->
-
         <div class="photo-card">
 
             <img
@@ -1407,9 +2007,6 @@ footer span {
 
         </div>
 
-
-
-        <!-- PHOTO 3 -->
 
         <div class="photo-card">
 
@@ -1425,9 +2022,6 @@ footer span {
         </div>
 
 
-
-        <!-- PHOTO 4 -->
-
         <div class="photo-card">
 
             <img
@@ -1442,9 +2036,6 @@ footer span {
         </div>
 
 
-
-        <!-- PHOTO 5 -->
-
         <div class="photo-card">
 
             <img
@@ -1458,9 +2049,6 @@ footer span {
 
         </div>
 
-
-
-        <!-- PHOTO 6 -->
 
         <div class="photo-card">
 
@@ -1489,9 +2077,10 @@ footer span {
 <section class="content-section">
 
     <h2 class="section-title">
-        Things I Love About You ❤️
-    </h2>
 
+        Things I Love About You ❤️
+
+    </h2>
 
     <div class="reasons">
 
@@ -1507,13 +2096,14 @@ footer span {
             </h3>
 
             <p>
+
                 There is something about
-                your smile that can stay
+                your smile that stays
                 in my mind for a long time.
+
             </p>
 
         </div>
-
 
 
         <div class="reason">
@@ -1527,13 +2117,14 @@ footer span {
             </h3>
 
             <p>
+
                 Sometimes just knowing
                 you're there feels more
                 comforting than words.
+
             </p>
 
         </div>
-
 
 
         <div class="reason">
@@ -1547,12 +2138,14 @@ footer span {
             </h3>
 
             <p>
+
                 You have a place in my heart
-                that isn't easily replaced.
+                that I don't want to replace
+                with anyone else.
+
             </p>
 
         </div>
-
 
 
         <div class="reason">
@@ -1566,8 +2159,11 @@ footer span {
             </h3>
 
             <p>
-                Every little memory became
-                something I don't want to forget.
+
+                Every little memory
+                became something
+                I don't want to forget.
+
             </p>
 
         </div>
@@ -1580,13 +2176,153 @@ footer span {
 
 
 <!-- ==================================================
+     BALLOON SECTION
+================================================== -->
+
+<section class="content-section balloon-section">
+
+    <h2 class="section-title">
+
+        One More Little Surprise 🎈❤️
+
+    </h2>
+
+    <p class="section-subtitle">
+
+        There are some things
+        I couldn't fit into words...
+
+        So maybe let the balloons
+        say them for me.
+
+        <br><br>
+
+        <strong>
+            Pop all the balloons. 🎈
+        </strong>
+
+        <br>
+
+        Something special is waiting
+        at the end. ❤️
+
+    </p>
+
+
+    <div class="balloon-area">
+
+
+        <div
+            class="balloon"
+            onclick="burstBalloon(this)"
+        >
+            TAP ME ❤️
+        </div>
+
+
+        <div
+            class="balloon"
+            onclick="burstBalloon(this)"
+        >
+            TAP ME 💕
+        </div>
+
+
+        <div
+            class="balloon"
+            onclick="burstBalloon(this)"
+        >
+            TAP ME 💗
+        </div>
+
+
+        <div
+            class="balloon"
+            onclick="burstBalloon(this)"
+        >
+            TAP ME 💖
+        </div>
+
+
+        <div
+            class="balloon"
+            onclick="burstBalloon(this)"
+        >
+            TAP ME 🥺
+        </div>
+
+
+        <div
+            class="balloon"
+            onclick="burstBalloon(this)"
+        >
+            TAP ME ❤️
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     LOVE POPUP
+================================================== -->
+
+<div
+    id="loveMessage"
+    class="love-message"
+>
+
+    <div class="love-message-box">
+
+        <div class="big-heart">
+            ❤️
+        </div>
+
+        <h1>
+            I LOVE YOU
+        </h1>
+
+        <p>
+
+            No matter how much time passes,
+            there are some feelings
+            that the heart doesn't forget.
+
+            <br><br>
+
+            You will always be
+            very special to me. ❤️
+
+        </p>
+
+        <br>
+
+        <button
+            class="main-btn"
+            onclick="closeLoveMessage()"
+        >
+            Continue ❤️
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- ==================================================
      OUR STORY
 ================================================== -->
 
 <section class="content-section">
 
     <h2 class="section-title">
+
         Our Little Story 📖
+
     </h2>
 
 
@@ -1600,54 +2336,76 @@ footer span {
             </h3>
 
             <p>
-                Add here how you both first met
-                and what you remember about that day.
+
+                Once there was a time
+                when talking to you felt
+                so natural and beautiful.
+
+                I never knew those ordinary
+                conversations would become
+                such precious memories.
+
             </p>
 
         </div>
 
 
-
         <div class="timeline-item">
 
             <h3>
-                The Moment I Started Caring 🥺
+                When You Became Special 🥺
             </h3>
 
             <p>
-                Write about the moment when
-                you realized that he had become
-                special to you.
+
+                Slowly, without even realizing it,
+                you became someone
+                I started caring about deeply.
+
+                And even now,
+                I still remember that feeling.
+
             </p>
 
         </div>
 
 
-
         <div class="timeline-item">
 
             <h3>
-                Our Favorite Memory 🫂
+                Our Beautiful Days 🫂
             </h3>
 
             <p>
-                Add your favorite memory together here.
+
+                The small conversations,
+                laughs, silly moments,
+                the way we used to talk...
+
+                those moments still live
+                in my heart.
+
             </p>
 
         </div>
 
 
-
         <div class="timeline-item">
 
             <h3>
-                Today 🎂
+                Almost One Year... 🥺
             </h3>
 
             <p>
-                Today I just want to say...
-                Happy Birthday to someone
-                who means so much to me. ❤️
+
+                It has almost been one year
+                since we really got to see
+                each other the way we used to.
+
+                And honestly...
+
+                I miss you.
+
             </p>
 
         </div>
@@ -1667,9 +2425,10 @@ footer span {
     class="content-section surprise-section"
 >
 
-
     <h2 class="section-title">
+
         I Have One More Thing... 🎁
+
     </h2>
 
 
@@ -1685,10 +2444,13 @@ footer span {
         "
     >
 
-        You probably think you've seen everything...
+        You probably think
+        you've seen everything...
+
         <br>
 
-        But there is still one more surprise.
+        But there is still
+        one more little surprise.
 
     </p>
 
@@ -1697,7 +2459,9 @@ footer span {
         class="main-btn"
         onclick="openSurprise()"
     >
+
         Open It ❤️
+
     </button>
 
 
@@ -1714,27 +2478,24 @@ footer span {
 
         <br>
 
-
         <p>
 
             If I could give you one thing
             for your birthday,
+
             I would give you the ability
             to see yourself through my eyes.
 
         </p>
 
-
         <p>
 
             Maybe then you would understand
-            how special you are to me.
+            just how special you are to me.
 
         </p>
 
-
         <br>
-
 
         <strong>
 
@@ -1744,17 +2505,17 @@ footer span {
 
     </div>
 
-
 </section>
 
 
 
 <!-- ==================================================
-     LOVE LETTER
+     LONG LOVE LETTER
 ================================================== -->
 
-<section class="content-section">
-
+<section
+    class="content-section letter-section"
+>
 
     <h2 class="section-title">
 
@@ -1763,12 +2524,21 @@ footer span {
     </h2>
 
 
+    <p class="section-subtitle">
+
+        There are some things
+        that I have wanted to say
+        for a very long time.
+
+    </p>
+
+
     <div class="letter">
 
 
         <h2 class="letter-title">
 
-            To Bhanu ❤️
+            To My Bangarm ❤️
 
         </h2>
 
@@ -1778,112 +2548,1038 @@ footer span {
         </p>
 
 
-        <br>
-
-
         <p>
 
-            Today is your birthday,
-            but while making this,
-            I kept thinking about how many
-            little moments have brought us
-            to this point.
+            I don't even know where to begin,
+            because there is so much sitting
+            inside my heart that I want to tell you.
+
+            Maybe no letter can ever explain
+            everything I feel...
+
+            but I still want to try.
 
         </p>
 
 
         <p>
 
-            I know our story hasn't been perfect.
-            No story really is.
-            There have been smiles,
-            tears, arguments,
-            misunderstandings and moments
-            where we didn't know what to say.
+            First of all...
+
+            <span class="special">
+                Happy Birthday, Bangarm. ❤️
+            </span>
 
         </p>
 
 
         <p>
 
-            But somewhere inside all of that,
-            there are memories that I will
-            always hold close to my heart.
+            I genuinely hope you are happy.
+
+            I hope life gives you everything
+            you dream about.
+
+            I hope you achieve everything
+            you want in your life.
+
+            I hope you smile more,
+            worry less,
+            and always remember
+            how valuable you are.
 
         </p>
 
 
         <p>
 
-            You are someone who became
-            important to me.
-            And whether I say it every day
-            or not, that doesn't change
-            what you mean to me.
+            But today,
+            I also want to tell you
+            something that I have been
+            carrying inside me for a very long time.
 
         </p>
 
 
         <p>
 
-            On your birthday,
-            I don't want to ask life
-            for anything complicated for you.
+            <span class="special">
+                I miss you.
+            </span>
 
         </p>
 
 
         <p>
 
-            I just want you to be happy.
-            I want you to achieve your dreams.
-            I want you to become the person
-            you always wanted to become.
+            I miss you more than
+            I know how to explain.
+
+            I want to talk to you.
+
+            I want to sit and talk with you
+            like we used to.
+
+            I want those simple conversations
+            again.
+
+            I want to hear you.
+
+            I want to see you.
+
+            I want to know how your day was.
+
+            I want those small moments again.
 
         </p>
 
 
         <p>
 
-            And I hope whenever you look back
-            at this little website,
-            you remember that someone once
-            put all these little pieces together
-            just to make you smile.
+            You come into my mind
+            so many times.
+
+            Sometimes every second,
+            somehow you are there
+            in my thoughts.
+
+            Chala gurthostunnav.
+
+            Every second nuv naaku gurthostunnav.
+
+            Something reminds me of you.
+
+            A song...
+
+            A place...
+
+            A memory...
+
+            A small thing...
+
+            And suddenly,
+            I remember you.
 
         </p>
 
 
-        <br>
-
-
         <p>
-            Happy Birthday, Bhanu.
+
+            It has almost been one year
+            since we really got to see
+            each other.
+
+            And honestly,
+            I never thought
+            I would miss someone's presence
+            this much.
+
         </p>
 
 
         <p>
 
-            Take care of yourself.
+            There are days when
+            I just wish I could see you again.
+
+            Even if we don't say much.
+
+            Even if we just sit quietly.
+
+            I think just seeing you
+            would mean so much to me.
+
+        </p>
+
+
+        <p>
+
+            And Bhanu...
+
+            if I have ever hurt you,
+
+            if I have ever said something wrong,
+
+            if I have ever done something
+            that made you feel bad,
+
+            <span class="special">
+                emaina chesi unte, I am really sorry.
+            </span>
+
+        </p>
+
+
+        <p>
+
+            Maybe I don't always know
+            how to express myself properly.
+
+            Maybe sometimes
+            my emotions come out
+            in the wrong way.
+
+            But I never wanted
+            to intentionally hurt you.
+
+            For anything I have done
+            that caused you pain,
+
+            <span class="special">
+                I am sorry, Bangarm.
+            </span>
+
+        </p>
+
+
+        <p>
+
+            And even after everything
+            that happened...
+
+            I never really felt
+            hatred towards you.
+
+            Honestly,
+
+            <span class="special">
+                I never hated you.
+            </span>
+
+        </p>
+
+
+        <p>
+
+            I don't know how to hate you.
+
+            Because the person
+            who became so important
+            to my heart cannot simply
+            become a stranger
+            inside my memories.
+
+        </p>
+
+
+        <p>
+
+            From the very beginning,
+            the way I liked you...
+
+            <span class="special">
+                I still like you the same way.
+            </span>
+
+        </p>
+
+
+        <p>
+
+            Time passed.
+
+            Things happened.
+
+            We changed.
+
+            We had misunderstandings.
+
+            We had difficult moments.
+
+            But my feelings didn't suddenly
+            disappear because of them.
+
+        </p>
+
+
+        <p>
+
+            <span class="special">
+                EM JARIGINA...
+            </span>
+
+            I still care about you.
+
+            I still like you.
+
+            I still love you.
+
+        </p>
+
+
+        <p>
+
+            Even if someone says something
+            bad about you,
+
+            I don't simply believe it.
+
+            Because I trust you deeply.
+
+        </p>
+
+
+        <p>
+
+            <span class="special">
+
+                Nenu ninu chala nammutunna...
+
+                chala ante chala.
+
+            </span>
+
+        </p>
+
+
+        <p>
+
+            Nuv ala cheyav ani
+            na heart lo oka nammakam undi.
+
+            I don't know how to explain it,
+
+            but I trust the person
+            I knew and cared for.
+
+        </p>
+
+
+        <p>
+
+            I don't know what you think
+            about me today.
+
+            I don't know what is in your heart.
+
+            And I don't want to force
+            an answer from you.
+
+            I just want you to know
+            what is in mine.
+
+        </p>
+
+
+        <p>
+
+            <span class="special">
+                I love you, Bhanu.
+            </span>
+        </p>
+
+
+        <p>
+
+            And I still have
+            the same feelings for you.
+
+            I have the same feelings for u.
+
+        </p>
+
+
+        <p>
+
+            You are still
+            one of the most special people
+            in my life.
+
+            Your place in my life
+            is something
+            I don't want to replace.
+
+        </p>
+
+
+        <p>
+
+            I don't want to replace
+            your place in my life
+            with someone else.
+
+            Because your place became yours
+            through everything
+            we experienced together.
+
+        </p>
+
+
+        <p>
+
+            Every special moment
+            between us is still
+            somewhere in my memory.
+
+            I remember our conversations.
+
+            I remember our happiness.
+
+            I remember our silly moments.
+
+            I remember the little things.
+
+            I remember how we used
+            to talk to each other.
+
+        </p>
+
+
+        <p>
+
+            Sometimes I feel
+            your presence even now.
+
+            You are not physically
+            standing beside me,
+
+            but somehow your memories
+            are still present
+            in my present.
+
+        </p>
+
+
+        <p>
+
+            Sometimes I even dream
+            about meeting you.
+
+            In my dreams,
+            we talk again.
+
+            We laugh again.
+
+            Everything feels normal again.
+
+            And when I wake up,
+            for a few seconds
+            it feels real...
+
+            and then I realize
+            it was only a dream.
+
+        </p>
+
+
+        <p>
+
+            And maybe the tears
+            that come from my eyes sometimes
+            explain something
+            that my words cannot.
+
+            They tell me
+            how much you still mean to me.
+
+        </p>
+
+
+        <p>
+
+            My heart still gives
+            your memories
+            a value that I cannot explain.
+
+        </p>
+
+
+        <p>
+
+            Even now,
+            when I think about my future,
+            there is a part of me
+            that hopes...
+
+            maybe one day
+            we will have those happy days again.
+
+        </p>
+
+
+        <p>
+
+            I keep waiting for the day
+            when we can talk normally again.
+
+            The day when our conversations
+            don't feel distant.
+
+            The day when we can laugh again.
+
+            The day when we can look at each other
+            without carrying all the pain
+            of everything that happened.
+
+        </p>
+
+
+        <p>
+
+            I miss the version of us
+            where we could simply
+            talk to each other.
+
+            I miss the happiness.
+
+            I miss the comfort.
+
+            I miss having you around.
+
+        </p>
+
+
+        <p>
+
+            And yes...
+
+            <span class="special">
+                I want to see you again.
+            </span>
+
+        </p>
+
+
+        <p>
+
+            More than anything,
+            I want one chance
+            to sit in front of you
+            and just talk.
+
+            No arguments.
+
+            No pressure.
+
+            No forcing anything.
+
+            Just two people
+            remembering why
+            they once became
+            so important to each other.
+
+        </p>
+
+
+        <p>
+
+            I don't know what tomorrow
+            will bring.
+
+            But I genuinely hope
+            that someday
+            we can find our way
+            back to happiness.
+
+        </p>
+
+
+        <p>
+
+            I hope one day
+            we can talk the way
+            we used to.
+
+            I hope one day
+            we can laugh again.
+
+            I hope one day
+            we can make new memories
+            instead of only remembering
+            the old ones.
+
+        </p>
+
+
+        <p>
+
+            I don't want to force
+            anything from you.
+
+            I only want you to know
+            that if someday
+            your heart allows it,
+
+            I would love the chance
+            to talk to you again.
+
+        </p>
+
+
+        <p>
+
+            I would love a chance
+            to see you again.
+
+            To sit with you.
+
+            To talk with you.
+
+            To understand you.
+
+            To listen to you.
+
+            And maybe,
+            slowly,
+            find the happiness
+            we once had.
+
+        </p>
+
+
+        <p>
+
+            Because I still believe
+            that some beautiful things
+            deserve another chance.
+
+        </p>
+
+
+        <p>
+
+            And if someday
+            we get that chance...
+
+            I would never take
+            those moments for granted.
+
+        </p>
+
+
+        <p>
+
+            Bhanu...
+
+            please always remember
+            one thing.
+
+        </p>
+
+
+        <p class="special">
+
+            You are special to me.
+
+        </p>
+
+
+        <p>
+
+            Not just today.
+
+            Not just because
+            it is your birthday.
+
+            You have been special
+            to me for a long time.
+
+        </p>
+
+
+        <p>
+
+            And no matter what situation
+            life puts us in,
+
+            I will always wish
+            good things for you.
+
+            I will always want
+            to see you happy.
+
+            I will always want
+            you to achieve your dreams.
+
+        </p>
+
+
+        <p>
+
+            You will always have
+            my support as someone
+            who is very special to me.
+
+            In good situations.
+
+            In difficult situations.
+
+            In happy days.
+
+            In bad days.
+
+            I will always want
+            the best for you.
+
+        </p>
+
+
+        <p>
+
+            You have always been
+            a first priority
+            in my heart.
+
+        </p>
+
+
+        <p>
+
+            And I don't want to replace
+            that place.
+
+            I don't want to forget
+            everything we had.
+
+            I don't want to pretend
+            that none of it mattered.
+
+            Because it mattered.
+
+            <span class="special">
+                You mattered.
+            </span>
+
+        </p>
+
+
+        <p>
+
+            You still matter.
+
+        </p>
+
+
+        <p>
+
+            Maybe someday,
+            when you look back
+            at this letter,
+
+            I hope you remember
+            that there was someone
+            who cared about you
+            more deeply than
+            she knew how to explain.
+
+        </p>
+
+
+        <p>
+
+            Someone who missed you.
+
+            Someone who remembered you.
+
+            Someone who still believed
+            in the beautiful memories.
+
+            Someone who still hoped
+            that happy days
+            could return.
+
+        </p>
+
+
+        <p>
+
+            I want you to remember
+            how beautiful
+            our happy days were.
+
+            Remember the laughs.
+
+            Remember the conversations.
+
+            Remember the little moments.
+
+            Remember the comfort.
+
+            Remember the happiness.
+
+        </p>
+
+
+        <p>
+
+            Because those memories
+            are still very precious to me.
+
+        </p>
+
+
+        <p>
+
+            I don't know if this letter
+            can tell you everything.
+
+            But if there is one thing
+            I want you to understand,
+            it is this:
+
+        </p>
+
+
+        <p class="special"
+           style="text-align:center; font-size:23px;">
+
+            I miss you.
+
+            <br><br>
+
+            I care about you.
+
+            <br><br>
+
+            I trust you.
+
+            <br><br>
+
+            I still love you.
+
+            <br><br>
+
+            I still have the same feelings.
+
+            <br><br>
+
+            And I still hope
+            that someday
+            we can smile together again. ❤️
+
+        </p>
+
+
+        <p>
+
+            If you are happy,
+            please remember me sometimes.
+
+            I will always be happy
+            to know that you are doing well.
+
+        </p>
+
+
+        <p>
+
+            If you achieve your dreams,
+            I will be proud of you.
+
+            If life becomes difficult,
+            I hope you remember
+            that there is someone
+            who genuinely wishes
+            good things for you.
+
+        </p>
+
+
+        <p>
+
+            And if someday
+            you remember me...
+
+            I hope you remember me
+            with a smile.
+
+        </p>
+
+
+        <p>
+
+            Remember the girl
+            who once loved talking to you.
+
+            Remember the girl
+            who kept your memories
+            close to her heart.
+
+            Remember your Potti.
+
+        </p>
+
+
+        <p>
+
+            Because no matter how much time
+            has passed,
+
+            <span class="special">
+
+                you are still my Bangarm.
+
+            </span>
+
+        </p>
+
+
+        <p>
+
+            I know life doesn't always
+            happen the way we imagine.
+
+            I know people change.
+
+            I know situations change.
+
+            I know sometimes
+            two people who care about each other
+            can still become distant.
+
+            But that doesn't erase
+            the beautiful things
+            that once existed.
+
+        </p>
+
+
+        <p>
+
+            And I will always be grateful
+            for the happiness
+            you brought into my life.
+
+        </p>
+
+
+        <p>
+
+            If life gives us
+            another chance to sit together,
+            talk together,
+            laugh together
+            and make new memories...
+
+            I would be grateful.
+
+        </p>
+
+
+        <p>
+
+            Until then...
+
+            please take care of yourself.
+
+            Eat properly.
+
+            Sleep properly.
+
             Keep smiling.
+
             Keep chasing your dreams.
 
-        </p>
+            And please...
 
+            be happy.
 
-        <br>
-
-
-        <p>
-            With all the love in my heart,
         </p>
 
 
         <p>
+
+            Happy Birthday once again,
+            my Bangarm.
+
+        </p>
+
+
+        <p>
+
+            I hope this birthday
+            brings something beautiful
+            into your life.
+
+        </p>
+
+
+        <p>
+
+            And I hope someday
+            when you think about
+            this birthday,
+
+            you remember that
+            someone made this little world
+            because you were important
+            enough to her heart
+            to make her do it.
+
+        </p>
+
+
+        <p>
+
+            I miss you.
+
+            More than these words can say.
+
+        </p>
+
+
+        <p>
+
+            I want to see you again.
+
+        </p>
+
+
+        <p>
+
+            I want to talk to you again.
+
+        </p>
+
+
+        <p>
+
+            I want us to be happy again.
+
+        </p>
+
+
+        <p>
+
+            And whatever happens...
+
+            I will always wish
+            good things for you.
+
+        </p>
+
+
+        <p class="special"
+           style="text-align:center; font-size:24px;">
+
+            EM JARIGINA...
+
+            <br><br>
+
+            You will always be
+            someone very special
+            to my heart. ❤️
+
+        </p>
+
+
+        <div class="signature">
+
+            With all my heart,
+
+            <br><br>
+
             <strong>
-                Pooja ❤️
+                From your Potti ⭐❤️
             </strong>
-        </p>
+
+            <br>
+
+            <span style="font-size:18px;">
+                always caring for her Bangarm
+            </span>
+
+        </div>
 
 
     </div>
@@ -1893,24 +3589,20 @@ footer span {
 
 
 <!-- ==================================================
-     FINAL
+     FINAL SECTION
 ================================================== -->
 
 <section class="final-section">
 
-
     <div class="final-content">
-
 
         <div class="final-heart">
             ❤️
         </div>
 
-
         <h1>
             Happy Birthday, Bhanu
         </h1>
-
 
         <p>
 
@@ -1923,20 +3615,24 @@ footer span {
 
             <br><br>
 
-            Thank you for being a part
-            of my story. 🫂
+            Thank you for being
+            a part of my story.
+
+            🫂
 
             <br><br>
 
             Stay happy.
+
             Stay blessed.
-            And keep smiling. ❤️
+
+            And keep smiling.
+
+            ❤️
 
         </p>
 
-
         <br>
-
 
         <h2 style="color:#c2185b;">
 
@@ -1944,9 +3640,15 @@ footer span {
 
         </h2>
 
+        <br>
+
+        <p style="font-size:17px;">
+
+            From your Potti ❤️⭐
+
+        </p>
 
     </div>
-
 
 </section>
 
@@ -1964,6 +3666,12 @@ footer span {
 
     Especially for Bhanu 🎂
 
+    <br>
+
+    <span>
+        From your Potti ❤️⭐
+    </span>
+
 </footer>
 
 
@@ -1978,28 +3686,25 @@ footer span {
 <script>
 
 
-/* =========================
+/* ==================================================
    PASSWORD
-========================= */
+================================================== */
 
 function unlockWebsite() {
-
 
     const enteredPassword =
         document.getElementById(
             "passwordInput"
         ).value;
 
-
     const correctPassword =
-        "Bhanu123";
+        "poojabhanuprasad143";
 
 
     if (
         enteredPassword ===
         correctPassword
     ) {
-
 
         document.getElementById(
             "passwordScreen"
@@ -2014,23 +3719,49 @@ function unlockWebsite() {
         createExtraHearts();
 
 
+        /* BACKGROUND MUSIC */
+
+        const music =
+            document.getElementById(
+                "backgroundMusic"
+            );
+
+        music.volume = 0.35;
+
+
+        music.play().then(function() {
+
+            document.getElementById(
+                "musicButton"
+            ).innerHTML = "🎵";
+
+        }).catch(function() {
+
+            document.getElementById(
+                "musicButton"
+            ).innerHTML = "🔇";
+
+        });
+
+
+        /* FIRST VIDEO */
+
         const video =
             document.getElementById(
                 "firstVideo"
             );
 
-
         video.play().catch(function() {
 
             console.log(
-                "Autoplay was blocked by browser."
+                "Video needs play button."
             );
 
         });
 
+    }
 
-    } else {
-
+    else {
 
         document.getElementById(
             "error"
@@ -2042,12 +3773,14 @@ function unlockWebsite() {
 }
 
 
-/* =========================
-   ENTER KEY PASSWORD
-========================= */
+/* ==================================================
+   ENTER KEY
+================================================== */
 
 document
-    .getElementById("passwordInput")
+    .getElementById(
+        "passwordInput"
+    )
     .addEventListener(
         "keypress",
         function(event) {
@@ -2064,34 +3797,209 @@ document
     );
 
 
-/* =========================
-   SOUND
-========================= */
+/* ==================================================
+   VIDEO SOUND
+================================================== */
 
 function turnSoundOn() {
-
 
     const video =
         document.getElementById(
             "firstVideo"
         );
 
-
     video.muted = false;
 
     video.volume = 1;
 
-    video.play();
+    video.play().catch(function() {
+
+        console.log(
+            "Click the video play button."
+        );
+
+    });
 
 }
 
 
-/* =========================
+/* ==================================================
+   BACKGROUND MUSIC
+================================================== */
+
+function toggleMusic() {
+
+    const music =
+        document.getElementById(
+            "backgroundMusic"
+        );
+
+    const button =
+        document.getElementById(
+            "musicButton"
+        );
+
+
+    if (music.paused) {
+
+        music.play().then(function() {
+
+            button.innerHTML = "🎵";
+
+        }).catch(function() {
+
+            alert(
+                "Please click the page once, then try the music button again ❤️"
+            );
+
+        });
+
+    }
+
+    else {
+
+        music.pause();
+
+        button.innerHTML = "🔇";
+
+    }
+
+}
+
+
+/* ==================================================
+   BALLOON BURST
+================================================== */
+
+let poppedBalloons = 0;
+
+const totalBalloons = 6;
+
+
+function burstBalloon(balloon) {
+
+    if (
+        balloon.classList.contains(
+            "burst"
+        )
+    ) {
+
+        return;
+
+    }
+
+
+    poppedBalloons++;
+
+
+    /* POP TEXT */
+
+    const pop =
+        document.createElement(
+            "div"
+        );
+
+    pop.className =
+        "pop-text";
+
+    pop.innerHTML =
+        "POP! 💥❤️";
+
+
+    const rect =
+        balloon.getBoundingClientRect();
+
+
+    pop.style.left =
+        rect.left +
+        rect.width / 2 -
+        40 +
+        "px";
+
+
+    pop.style.top =
+        rect.top +
+        "px";
+
+
+    document.body.appendChild(
+        pop
+    );
+
+
+    setTimeout(function() {
+
+        pop.remove();
+
+    }, 1000);
+
+
+    balloon.classList.add(
+        "burst"
+    );
+
+
+    createExtraHearts();
+
+
+    setTimeout(function() {
+
+        balloon.style.display =
+            "none";
+
+    }, 500);
+
+
+    /* SHOW LOVE MESSAGE
+       ONLY AFTER ALL BALLOONS */
+
+    if (
+        poppedBalloons ===
+        totalBalloons
+    ) {
+
+        setTimeout(function() {
+
+            document
+                .getElementById(
+                    "loveMessage"
+                )
+                .classList.add(
+                    "show"
+                );
+
+
+            createExtraHearts();
+
+        }, 700);
+
+    }
+
+}
+
+
+/* ==================================================
+   CLOSE LOVE MESSAGE
+================================================== */
+
+function closeLoveMessage() {
+
+    document
+        .getElementById(
+            "loveMessage"
+        )
+        .classList.remove(
+            "show"
+        );
+
+}
+
+
+/* ==================================================
    SURPRISE
-========================= */
+================================================== */
 
 function openSurprise() {
-
 
     const surprise =
         document.getElementById(
@@ -2108,12 +4016,11 @@ function openSurprise() {
 }
 
 
-/* =========================
+/* ==================================================
    EXTRA HEARTS
-========================= */
+================================================== */
 
 function createExtraHearts() {
-
 
     const hearts = [
 
@@ -2121,7 +4028,8 @@ function createExtraHearts() {
         "💕",
         "💗",
         "💖",
-        "💘"
+        "💘",
+        "💞"
 
     ];
 
@@ -2131,7 +4039,6 @@ function createExtraHearts() {
         i < 25;
         i++
     ) {
-
 
         const heart =
             document.createElement(
@@ -2189,6 +4096,7 @@ function createExtraHearts() {
             [
 
                 {
+
                     transform:
                         "scale(0)",
 
@@ -2248,38 +4156,28 @@ function createExtraHearts() {
 }
 
 
-/* =========================
-   VIDEO AUTOPLAY
-========================= */
+/* ==================================================
+   ESCAPE KEY CLOSE POPUP
+================================================== */
 
-window.addEventListener(
-    "load",
-    function() {
+document.addEventListener(
+    "keydown",
+    function(event) {
 
+        if (
+            event.key === "Escape"
+        ) {
 
-        const video =
-            document.getElementById(
-                "firstVideo"
-            );
+            closeLoveMessage();
 
-
-        video.play().catch(
-            function() {
-
-                console.log(
-                    "User interaction required."
-                );
-
-            }
-        );
-
+        }
 
     }
 );
-
 
 </script>
 
 
 </body>
+
 </html>
